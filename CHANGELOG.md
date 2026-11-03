@@ -10,6 +10,11 @@ All notable changes to AudioHop are listed here. The format follows
 
 - Equalizer.
 
+### Documentation
+
+- Code of conduct, contributing guide, security policy and accessibility
+  statement, plus issue and pull request templates.
+
 ## [1.0.0] - 2026-11-03
 
 First release.

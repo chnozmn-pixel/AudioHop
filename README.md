@@ -175,6 +175,18 @@ through `IAudioEndpointVolume`. Hotkeys are plain `RegisterHotKey`.
 
 - Equalizer.
 
+## Contributing
+
+Bug reports, translations and patches are all welcome.
+[CONTRIBUTING.md](CONTRIBUTING.md) covers building, testing a change and adding
+a language; [ACCESSIBILITY.md](ACCESSIBILITY.md) says what works with a keyboard
+or a screen reader and what does not yet. Security problems go through
+[private reporting](https://github.com/chnozmn-pixel/AudioHop/security/advisories/new),
+not the issue tracker - see [SECURITY.md](SECURITY.md).
+
+Everyone taking part is expected to follow the
+[Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## License
 
 [MIT](LICENSE)

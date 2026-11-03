@@ -1,0 +1,87 @@
+name: Bug report
+description: Something does not work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. For a security problem, please use
+        [private reporting](https://github.com/chnozmn-pixel/AudioHop/security/advisories/new)
+        instead of this form.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        I pressed Ctrl+Alt+F9 and the picker opened, but the volume bar stayed at 0%.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: AudioHop version
+      description: Right-click AudioHop.exe, Properties, Details. Or say "built from main".
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Press Win+R, type winver.
+      placeholder: "Windows 11 24H2 (26100.2033)"
+    validations:
+      required: true
+
+  - type: input
+    id: devices
+    attributes:
+      label: Audio devices involved
+      description: Which devices, and how they connect (USB, Bluetooth, HDMI, onboard).
+      placeholder: "Realtek onboard speakers + a USB headset"
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - install.ps1
+        - Scoop
+        - winget
+        - Downloaded AudioHop.exe
+        - Built it myself
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Trace log
+      description: |
+        Very helpful for hotkey and switching problems. Close AudioHop, then in PowerShell:
+
+        ```powershell
+        $env:AUDIOHOP_LOG = 1
+        & "$env:LOCALAPPDATA\Programs\AudioHop\AudioHop.exe"
+        ```
+
+        Reproduce the problem, close AudioHop, and paste `%TEMP%\audiohop.log` here.
+        It records hotkey registrations, keypresses and device switches - no
+        keystrokes outside the hotkeys, and no personal data beyond your device
+        names.
+      render: text

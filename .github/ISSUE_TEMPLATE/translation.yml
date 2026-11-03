@@ -1,0 +1,47 @@
+name: Translation
+description: Add a language, or fix wording in one.
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can test any wording before opening this, without rebuilding: drop a
+        `<code>.lang` file into `%APPDATA%\AudioHop\lang\`. See
+        [CONTRIBUTING.md](https://github.com/chnozmn-pixel/AudioHop/blob/main/CONTRIBUTING.md#translations).
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: "Svenska (sv)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Is this a new language or a correction?
+      options:
+        - A new language
+        - A correction to an existing language
+    validations:
+      required: true
+
+  - type: textarea
+    id: strings
+    attributes:
+      label: The wording
+      description: The keys and their text, or just the ones that are wrong and what they should say.
+      render: ini
+      placeholder: |
+        menu.exit=Avsluta
+        overlay.title=Byt ljudenhet
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rtl
+    attributes:
+      label: Script direction
+      options:
+        - label: This language is written right to left.

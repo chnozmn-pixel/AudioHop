@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/chnozmn-pixel/AudioHop/security/advisories/new
+    about: Report it privately instead of opening an issue.
+  - name: Accessibility barrier
+    url: https://github.com/chnozmn-pixel/AudioHop/blob/main/ACCESSIBILITY.md
+    about: What works today, what does not, and how to report a barrier.
+  - name: Before you start a change
+    url: https://github.com/chnozmn-pixel/AudioHop/blob/main/CONTRIBUTING.md
+    about: How to build AudioHop, test a change and add a language.

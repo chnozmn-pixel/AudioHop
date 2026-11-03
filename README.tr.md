@@ -175,6 +175,18 @@ yok. Ses seviyesi `IAudioEndpointVolume` üzerinden, kısayollar düz
 
 - Ekolayzer.
 
+## Katkı
+
+Hata bildirimi, çeviri ve yama; hepsine açık.
+[CONTRIBUTING.md](CONTRIBUTING.md) derlemeyi, bir değişikliği denemeyi ve dil
+eklemeyi anlatıyor; [ACCESSIBILITY.md](ACCESSIBILITY.md) klavye ve ekran
+okuyucuyla nelerin çalıştığını, nelerin henüz çalışmadığını açıkça yazıyor.
+Güvenlik sorunları issue olarak değil,
+[özel bildirim](https://github.com/chnozmn-pixel/AudioHop/security/advisories/new)
+yoluyla geliyor — bkz. [SECURITY.md](SECURITY.md).
+
+Katılan herkesin [Davranış Kuralları](CODE_OF_CONDUCT.md)'na uyması bekleniyor.
+
 ## Lisans
 
 [MIT](LICENSE)
