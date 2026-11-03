@@ -74,7 +74,8 @@ function Edit-Manifest {
 Edit-Manifest 'packaging/scoop/audiohop.json' {
     param([string] $t)
     $t = $t -replace '"version": "[^"]*"', "`"version`": `"$Version`""
-    $t = $t -replace '/download/v[^/]+/AudioHop\.exe', "/download/v$Version/AudioHop.exe"
+    # Leave the autoupdate template alone: its v$version is Scoop's placeholder.
+    $t = $t -replace '/download/v(?!\$version)[^/]+/AudioHop\.exe', "/download/v$Version/AudioHop.exe"
     $t -replace '"hash": "[^"]*"', "`"hash`": `"$($hash.ToLowerInvariant())`""
 }
 

@@ -8,6 +8,6 @@ ReleaseDate: 2026-11-03
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/chnozmn-pixel/AudioHop/releases/download/v1.0.0/AudioHop.exe
-  InstallerSha256: 073C3F407B58C0044079CAFBED6FA59362FF250E402C2B6C92B55F1D87C813B1
+  InstallerSha256: 856DC2FAA922D6DB88C99782A4FBFFCC25B9F06DA4FE9080B2DDC240B064FB02
 ManifestType: installer
 ManifestVersion: 1.6.0
