@@ -1,0 +1,17 @@
+# Build output
+AudioHop.exe
+*.pdb
+*.exe.config
+
+# Release staging
+dist/
+*.zip
+
+# Local settings copied in for testing
+settings.ini
+
+# Editors / OS
+.vs/
+*.user
+Thumbs.db
+desktop.ini

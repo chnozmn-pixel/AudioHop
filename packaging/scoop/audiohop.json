@@ -1,0 +1,33 @@
+{
+    "version": "1.0.0",
+    "description": "Switch the Windows sound device from the tray or an on-screen picker.",
+    "homepage": "https://github.com/chnozmn-pixel/AudioHop",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/chnozmn-pixel/AudioHop/releases/download/v1.0.0/AudioHop.exe",
+            "hash": "073c3f407b58c0044079cafbed6fa59362ff250e402c2b6c92b55f1d87c813b1"
+        }
+    },
+    "shortcuts": [
+        [
+            "AudioHop.exe",
+            "AudioHop"
+        ]
+    ],
+    "notes": [
+        "AudioHop lives in the system tray. The first run opens a short setup wizard;",
+        "no hotkey is assigned until you pick one.",
+        "Settings are kept in %APPDATA%\\AudioHop."
+    ],
+    "checkver": {
+        "github": "https://github.com/chnozmn-pixel/AudioHop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/chnozmn-pixel/AudioHop/releases/download/v$version/AudioHop.exe"
+            }
+        }
+    }
+}

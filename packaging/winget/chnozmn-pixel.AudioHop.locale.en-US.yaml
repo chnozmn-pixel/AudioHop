@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.6.0.schema.json
+PackageIdentifier: chnozmn-pixel.AudioHop
+PackageVersion: 1.0.0
+PackageLocale: en-US
+Publisher: chnozmn-pixel
+PublisherUrl: https://github.com/chnozmn-pixel
+PublisherSupportUrl: https://github.com/chnozmn-pixel/AudioHop/issues
+PackageName: AudioHop
+PackageUrl: https://github.com/chnozmn-pixel/AudioHop
+License: MIT
+LicenseUrl: https://github.com/chnozmn-pixel/AudioHop/blob/main/LICENSE
+ShortDescription: Switch the Windows sound device from the tray or an on-screen picker.
+Description: |-
+  AudioHop sits in the system tray and makes changing the playback or recording
+  device a single step. Press a hotkey and a small picker appears on top of
+  whatever is on screen: choose an output with the arrow keys, the mouse or a
+  number key, set its volume, done. Hotkeys are yours to pick - nothing is
+  pre-assigned - and a first-run wizard suggests combinations that are provably
+  free. The interface follows your Windows language across 15 built-in
+  translations, and switching sets all three audio roles at once, so games,
+  media players and call apps follow together.
+Moniker: audiohop
+Tags:
+- audio
+- audio-device
+- hotkey
+- output-switcher
+- playback
+- sound
+- tray
+- volume
+ReleaseNotesUrl: https://github.com/chnozmn-pixel/AudioHop/releases/tag/v1.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.6.0
